@@ -1,0 +1,17 @@
+##PHASE-1
+from turtle import Turtle, Screen
+Demo_1=Turtle()
+wn=Screen()
+def repeat_shape(Demo_1):
+    for i in range(15):
+        Demo_1.forward(50)
+        Demo_1.left(90)
+        Demo_1.forward(50)
+        Demo_1.left(90)
+        Demo_1.forward(50)
+        Demo_1.left(90)
+        Demo_1.forward(50)
+        Demo_1.left(90)
+        Demo_1.left(30)
+    wn.clear()        
+repeat_shape(Demo_1)
