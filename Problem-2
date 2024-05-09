@@ -1,0 +1,84 @@
+##PHASE-2   
+from turtle import Turtle, Screen
+star=Turtle()
+pattern_1=Turtle()
+maze=Turtle()
+pattern_2=Turtle()
+pattern_3=Turtle()
+pattern_4=Turtle()
+pattern_5=Turtle()
+
+wn=Screen()
+
+#In this function the turtle is making a continuous star loop.
+def shape_1(star):
+    for i in range(100):
+        star.forward(i+10)
+        star.right(144)
+    wn.clear()
+
+#In this function the turtle is making some pattern in which 4 star is printing and making some shape.
+def shape_2(pattern_1):
+    for i in range(50):
+        pattern_1.left(115)
+        for i in range(5):
+            pattern_1.forward(300)
+            pattern_1.left(150)
+    wn.clear()
+
+#In this function the turtle is making a loop which makes a maze like structure.
+def shape_3(maze):
+    for i in range(500):
+        maze.forward(i+1)
+        maze.right(90)
+    wn.clear()
+
+#In this function the turtle is making a pattern through pentagon a flower kind of structure is made.
+def shape_4(pattern_2):
+    for i in range(100):
+        pattern_2.left(115)
+        for i in range(5):
+            pattern_2.forward(150)
+            pattern_2.left(75)
+    wn.clear()
+
+#In this function the turtle is making a pattern through square having patterned gap in between.
+def shape_5(pattern_3):
+    for i in range(10):
+        pattern_3.right(100)
+        for i in range(10):
+            pattern_3.left(90)
+            pattern_3.backward(100)
+    wn.clear()
+#In this function the turtle is making a pattern through square loop and in between a pentagon.
+def shape_6(pattern_4):
+    for i in range(40):
+        pattern_4.forward(90)
+        pattern_4.right(60)
+        for i in range(20):
+            pattern_4.backward(i+60)
+            pattern_4.left(90)
+    wn.clear()
+
+#In this function  the turtle is making a pattern of a continue looped octagon.
+def shape_7(pattern_5):
+    for i in range(100):
+        pattern_5.right(50)
+        pattern_5.forward(i+30)
+        pattern_5.right(50)
+        pattern_5.forward(i+30)
+        pattern_5.backward(50)
+        pattern_5.left(50)
+    wn.clear()
+
+if __name__ == "__main__":
+    def sketch():
+        shape_1(star)
+        shape_2(pattern_1)
+        shape_3(maze)
+        shape_4(pattern_2)
+        shape_5(pattern_3)
+        shape_6(pattern_4)
+        shape_7(pattern_5)
+sketch()
+wn.exitonclick()
